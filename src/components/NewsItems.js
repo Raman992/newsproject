@@ -9,7 +9,6 @@ export class NewsItems extends Component {
         <div
           className="card"
           style={{
-            width: '18rem',
             minHeight: '28rem',
             borderRadius: '10px',
             overflow: 'hidden',
