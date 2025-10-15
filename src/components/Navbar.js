@@ -22,6 +22,9 @@ export class Navbar extends Component {
                   <a className="nav-link" href="/aboutus">About us</a>
                 </li>
               </ul>
+              <span class="navbar-text fw-bolder">
+                Welcome to the News24 where you can find all the news for free
+              </span>
             </div>
           </div>
         </nav>

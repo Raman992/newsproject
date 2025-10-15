@@ -8,7 +8,7 @@ export class App extends Component {
     return (
       <div className='bg-dark' >
         <Navbar/>
-        <News/>
+        <News pageSize={10}/>
       </div>
     )
   }
