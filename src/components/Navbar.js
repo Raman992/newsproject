@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
 
 export class Navbar extends Component {
-  // static propTypes = {
-
-  // }
 
   render() {
     return (
@@ -22,7 +18,7 @@ export class Navbar extends Component {
                   <a className="nav-link" href="/aboutus">About us</a>
                 </li>
               </ul>
-              <span class="navbar-text fw-bolder">
+              <span className="navbar-text fw-bolder">
                 Welcome to the News24 where you can find all the news for free
               </span>
             </div>

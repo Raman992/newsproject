@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Spinner from './Spinner';
 
 export class NewsItems extends Component {
   render() {
@@ -16,11 +17,7 @@ export class NewsItems extends Component {
           }}
         >
           <img
-            src={
-              imageUrl
-                ? imageUrl
-                : 'https://via.placeholder.com/286x160.png?text=No+Image'
-            }
+            src={ imageUrl ? imageUrl : Spinner }
             className="card-img-top"
             alt="News thumbnail"
             style={{
