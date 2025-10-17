@@ -26,10 +26,7 @@ export class Navbar extends Component {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/aboutus">About us</Link>
-                </li>
+                </li>                
                 <li className="nav-item dropdown">
                   <Link
                     className="nav-link dropdown-toggle"
@@ -48,7 +45,10 @@ export class Navbar extends Component {
                     <li><Link className="dropdown-item" to="/science">Science</Link></li>
                     <li><Link className="dropdown-item" to="/sports">Sports</Link></li>
                     <li><Link className="dropdown-item" to="/technology">Technology</Link></li>
-                  </ul>
+                  </ul>                  
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/aboutus">About us</Link>
                 </li>
               </ul>
               <span className="navbar-text fw-bolder">
