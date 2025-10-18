@@ -56,7 +56,7 @@ export class AboutUs extends Component {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body bg-light">
-              <strong>It is a news website.</strong> This website allows user to get latest news with top headlines straight to the user with less effort thanks to react and newsapi.
+              <strong>It is a news website.</strong> This website allows user to get latest news with top headlines straight to the user with less effort thanks to react and newsapi. The api I have used is free ones so it doesnt matter if it is being copied.
             </div>
           </div>
         </div>
