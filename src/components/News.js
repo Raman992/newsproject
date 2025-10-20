@@ -92,17 +92,24 @@ export class News extends Component {
         }}>News24 - Top Headlines</h2>
         {this.state.loading && <Spinner />}
         <InfiniteScroll
-          dataLength={this.state.articles.length}
-          next={this.fetchMoreData}
-          hasMore={this.state.articles.length !== this.state.totalResults}
-          loader={<Spinner />}
-        >
-          <div className="container">
-
-            <div className="row">
-              {this.state.articles.map((element, index) => {
-                const uniqueKey = element.url ? element.url + index : index;
-                return <div className="col-md-3" key={uniqueKey}>
+        dataLength={this.state.articles.length}
+        next={this.fetchMoreData}
+        hasMore={this.state.articles.length < this.state.totalResults}
+        loader={this.state.articles.length < this.state.totalResults ? <Spinner /> : null}
+        endMessage={
+          this.state.articles.length >= this.state.totalResults && this.state.articles.length > 0 ? (
+            <p style={{ textAlign: "center", marginTop: "20px" }}>
+              <b>No more articles to load.</b>
+            </p>
+          ) : null
+        }
+      >
+        <div className="container">
+          <div className="row">
+            {this.state.articles.map((element, index) => {
+              const uniqueKey = element.url ? element.url + index : index;
+              return (
+                <div className="col-md-3" key={uniqueKey}>
                   <NewsItems
                     title={element.title ? element.title : ""}
                     description={element.description ? element.description : ""}
@@ -112,10 +119,11 @@ export class News extends Component {
                     date={element.publishedAt ? element.publishedAt : "Unknown"}
                   />
                 </div>
-              })}
-            </div>
+              );
+            })}
           </div>
-        </InfiniteScroll>
+        </div>
+      </InfiniteScroll>
 
 
         {/* <div className="row">

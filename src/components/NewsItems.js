@@ -29,8 +29,8 @@ export class NewsItems extends Component {
                 : 'No description available.'}
             </p>
             <p className="card-text">
-              <small className="text-body-secondary">Last updated by {author} on {new Date(date).toLocaleTimeString()}</small>
-              <span className="badge text-bg-success">Hotnews</span>
+              <small className="text-body-secondary">Last updated by {author} on {new Date(date).toLocaleTimeString()} </small>
+              <span className="badge text-bg-success"> Hotnews</span>
             </p>
             <a
               href={newsUrl}
