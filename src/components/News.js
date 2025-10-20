@@ -40,7 +40,7 @@ export class News extends Component {
     this.setState({
       articles: parsedData.articles,
       totalResults: parsedData.totalResults,
-      loading: false      
+      loading: false
     });
     this.props.setProgress(100);
   }
@@ -79,7 +79,17 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-3">
-        <h2 className='text-center'>News24 - Top Headlines</h2>
+        <h2 className='text-center' style={{
+          textAlign: "center",
+          fontSize: "2rem",
+          fontWeight: "800",
+          margin: "2rem 0 1rem",
+          background: "linear-gradient(180deg, #000000ff, #5f7e66ff, #ff0000ff)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          letterSpacing: "1px",
+          fontFamily: "'Poppins', sans-serif",
+        }}>News24 - Top Headlines</h2>
         {this.state.loading && <Spinner />}
         <InfiniteScroll
           dataLength={this.state.articles.length}
