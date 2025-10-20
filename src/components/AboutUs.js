@@ -11,7 +11,6 @@ export class AboutUs extends Component {
           Learn more about this simple yet powerful React news app with newsapi.
         </p>
       </div>
-
       <div className="accordion shadow-lg rounded-4 overflow-hidden" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header">

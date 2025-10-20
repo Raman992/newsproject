@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 export class Navbar extends Component {
 
@@ -38,7 +39,7 @@ export class Navbar extends Component {
                     Categories
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
-                    <li><Link className="dropdown-item active" to="/general">General</Link></li>
+                    <li><Link className="dropdown-item active" to="/general" >General</Link></li>
                     <li><Link className="dropdown-item" to="/business">Business</Link></li>
                     <li><Link className="dropdown-item" to="/entertainment">Entertainment</Link></li>
                     <li><Link className="dropdown-item" to="/health">Health</Link></li>
