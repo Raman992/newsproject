@@ -1,5 +1,6 @@
 {
   "name": "newsproject",
+  "homepage": "https://raman992.github.io/newsproject/"
   "version": "0.1.0",
   "private": true,
   "dependencies": {
